@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const satoshi = localFont({
   src: "./fonts/Satoshi.ttf",
@@ -29,9 +30,67 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${satoshi.variable} ${generalSans.variable}`}
+        className={`${inter.className} ${satoshi.variable} ${generalSans.variable} grid text-sm md:text-base`}
       >
+        <header className="w-full fade-bottom fixed">
+          <div className="w-full py-10 px-6 md:px-12 lg:px-28 flex justify-between items-start gap-x-4 mx-auto">
+            <div>
+              <Link
+                href="#"
+                className="font-black font-heading text-base md:text-xl tracking-widest"
+              >
+                ADN
+              </Link>
+            </div>
+
+            <nav className="relative min-w-[100px] min-h-[20px] text-[13px]">
+              <ul className="text-right flex flex-col gap-y-1.5 md:gap-y-5 font-heading tracking-normal">
+                <li className="font-black uppercase">
+                  <a href="#" className="active">
+                    About
+                  </a>
+                </li>
+                <li className="font-black uppercase opacity-50">
+                  <a href="#projects" className="active">
+                    Projects
+                  </a>
+                </li>
+                <li className="font-black uppercase opacity-50">
+                  <a href="#contact" className="active">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <aside className="text-xl order-1 md:-order-none md:fixed md:left-0 md:bottom-20">
+          <div className="w-full py-10 px-6 md:px-12 lg:px-28">
+            <ul className="flex md:flex-col items-center justify-center gap-4">
+              <li>
+                <Link href="#">CV</Link>
+              </li>
+              <li>
+                <Link href="#">Github</Link>
+              </li>
+              <li>
+                <Link href="#">LinkedIn</Link>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
         {children}
+
+        <footer className="order-3 w-full text-xs md:text-sm text-center">
+          <div className="w-full w-full py-4 px-6 md:px-12 lg:px-28">
+            Made by{" "}
+            <Link href="#" className="underline">
+              AbrahamDN
+            </Link>
+          </div>
+        </footer>
       </body>
     </html>
   );

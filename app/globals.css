@@ -8,6 +8,8 @@
   ---secondary-color: #0d0d0d;
   ---accent-color: #eb5939;
   ---line-color: rgba(77, 77, 77, 0.5);
+  /* GRADIENTS */
+  --fade-bottom: linear-gradient(#000, rgba(255, 255, 255, 0));
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -15,10 +17,20 @@
   }
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(---primary-color);
   background: rgb(33, 33, 33);
   background: radial-gradient(at center top, #141414, #121212, #0d0d0d)
     no-repeat;
   min-height: 100vh;
+}
+
+@layer utilities {
+  .fade-bottom {
+    background: var(--fade-bottom);
+  }
 }

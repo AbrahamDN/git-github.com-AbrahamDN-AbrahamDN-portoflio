@@ -22,6 +22,7 @@ module.exports = {
         heading: ["var(--satoshi)"],
         body: ["var(--general-sans)"],
       },
+      wrapper: "w-full max-[1920px]: py-10 px-6 md:px-12 lg:px-28",
     },
   },
   plugins: [],
