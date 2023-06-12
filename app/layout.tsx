@@ -65,7 +65,7 @@ export default function RootLayout({
           </div>
         </header>
 
-        <aside className="text-xl order-1 md:-order-none md:fixed md:left-0 md:bottom-20">
+        <aside className="order-1 md:-order-none md:fixed md:left-0 md:bottom-20">
           <div className="w-full py-10 px-6 md:px-12 lg:px-28">
             <ul className="flex md:flex-col items-center justify-center gap-4">
               <li>
