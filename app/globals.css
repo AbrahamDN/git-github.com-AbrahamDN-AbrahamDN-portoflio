@@ -23,8 +23,12 @@ html {
 
 body {
   color: var(---primary-color);
-  background: rgb(33, 33, 33);
-  background: radial-gradient(at center top, #141414, #121212, #0d0d0d)
+  background: #1e1e1e
+    radial-gradient(
+      61.36% 61.36% at 50% 50%,
+      var(---secondary-color) 0%,
+      rgba(13, 13, 13, 0) 100%
+    )
     no-repeat;
   min-height: 100vh;
 }
