@@ -93,7 +93,7 @@ body {
     @apply w-full min-h-[600px] h-screen flex flex-col justify-center mx-auto py-32;
   }
 
-  .after-text {
-    @apply after:absolute after:bottom-8 after:left-1/2 after:-translate-x-1/2 after:heading after:opacity-30 after:text-xs;
+  .after-text::after {
+    @apply absolute bottom-8 left-1/2 -translate-x-1/2 heading opacity-30 text-xs;
   }
 }
