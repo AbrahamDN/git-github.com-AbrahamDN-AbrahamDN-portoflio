@@ -2,7 +2,9 @@ const Test = () => {
   return (
     <main className="w-full min-h-[600px] h-screen">
       <section className="container-sm section relative after:content-['SCROLL_DOWN'] after-text">
-        <cite className="h5 not-italic">Abraham D Ndinga</cite>
+        <cite className="h5 not-italic">
+          Abraham D<span className="sr-only">ieudonne</span> Ndinga -
+        </cite>
 
         <div className="flex items-end">
           <h1 className="h1">
