@@ -30,12 +30,16 @@ body {
 }
 
 @layer base {
+  body {
+    @apply text-sm sm:text-base;
+  }
+
   .h1,
   .h2,
   .h3,
   .h4,
   .h5 {
-    @apply heading;
+    @apply heading uppercase;
   }
 
   .h1 {
@@ -55,17 +59,21 @@ body {
   }
 
   .body {
-    @apply font-normal normal-case text-base font-body;
+    @apply font-body font-normal normal-case;
   }
 }
 
 @layer utilities {
   .heading {
-    @apply uppercase font-heading font-black leading-none;
+    @apply font-heading font-black leading-none;
   }
 
   .fade-bottom {
     background: var(--fade-bottom);
+  }
+
+  .text-highlight {
+    @apply text-accent font-medium;
   }
 }
 
@@ -79,5 +87,9 @@ body {
 
   .section {
     @apply w-full min-h-[600px] h-screen flex flex-col justify-center mx-auto py-32;
+  }
+
+  .after-text {
+    @apply after:absolute after:bottom-8 after:left-1/2 after:-translate-x-1/2 after:heading after:opacity-30 after:text-xs;
   }
 }
