@@ -16,10 +16,10 @@ const Test = () => {
         </div>
 
         <p className="body max-w-[420px] mt-10 leading-[21.6px]">
-          Experienced <span className="text-highlight">web developer</span> with
-          3 years of proven expertise, demonstrating a relentless commitment to
-          accessibility, performance optimization, and elevating user experience
-          with <span className="text-highlight">UI/UX</span> skills.
+          Experienced <mark>web developer</mark> with 3 years of proven
+          expertise, demonstrating a relentless commitment to accessibility,
+          performance optimization, and elevating user experience with{" "}
+          <mark>UI/UX</mark> skills.
         </p>
       </section>
     </main>

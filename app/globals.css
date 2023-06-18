@@ -34,6 +34,10 @@ body {
     @apply text-sm sm:text-base;
   }
 
+  mark {
+    @apply bg-transparent text-highlight;
+  }
+
   .h1,
   .h2,
   .h3,
