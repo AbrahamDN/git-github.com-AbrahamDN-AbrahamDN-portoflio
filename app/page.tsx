@@ -1,4 +1,8 @@
+import Image from "next/image";
 import TechStackSection from "./components/TechStackSection";
+import { skills } from "./data";
+import Link from "next/link";
+import ProjectCard from "./components/ProjectCard";
 
 const Test = () => {
   return (
@@ -28,6 +32,40 @@ const Test = () => {
       </section>
 
       <TechStackSection />
+
+      <section id="projects" className="section">
+        <h2 className="h5 container-sm mb-12">Projects</h2>
+
+        <div className="relative">
+          <ProjectCard
+            title="Flair"
+            image="https://res.cloudinary.com/abrahamdn/image/upload/v1686716728/abrahamdn/flair-desktop.png"
+            skills={[
+              "TYPESCRIPT",
+              "NEXTJS 13",
+              "SANITY CMS",
+              "STRIPE",
+              "TAILWINDCSS",
+            ]}
+            preview="/"
+            code="/"
+          />
+          <ProjectCard
+            title="Travel"
+            image="https://res.cloudinary.com/abrahamdn/image/upload/v1686716729/abrahamdn/travel-desktop.png"
+            skills={["JavaScript", "CSS", "HTML5"]}
+            preview="/"
+            code="/"
+          />
+          <ProjectCard
+            title="PokeDets"
+            image="https://res.cloudinary.com/abrahamdn/image/upload/v1686718907/abrahamdn/pokedets-desktop.png"
+            skills={["React", "Typescript", "Framer Motion", "Poke API"]}
+            preview="/"
+            code="/"
+          />
+        </div>
+      </section>
     </main>
   );
 };
