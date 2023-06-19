@@ -26,6 +26,7 @@ module.exports = {
       },
       colors: {
         primary: "#b7ab98",
+        "primary-fade": "hsl(41deg 21% 64% / 50%)",
         secondary: "#0d0d0d",
         accent: "#eb5939",
         line: "rgba(77, 77, 77, 0.5)",

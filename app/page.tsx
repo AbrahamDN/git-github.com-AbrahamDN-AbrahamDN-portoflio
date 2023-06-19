@@ -1,32 +1,30 @@
-import Image from "next/image";
-
-export default function Home() {
+const Test = () => {
   return (
-    <main className="w-full">
-      <section className="w-full py-64 text-lg">
-        <div className="w-full px-6 sm:px-12 md:px-40 lg:px-60 xl:px-80">
-          <div className="w-full font-heading font-extrabold uppercase">
-            <cite className="text-sm lg:text-base not-italic">
-              Abraham D Ndinga -{" "}
-            </cite>
+    <main className="w-full min-h-[600px] h-screen">
+      <section className="container-sm section relative after:content-['SCROLL_DOWN'] after-text">
+        <cite className="h5 not-italic">
+          Abraham D<span className="sr-only">ieudonne</span> Ndinga -
+        </cite>
 
-            <h1 className="text-6xl lg:text-7xl xl:text-8xl 2xl:text-[9rem] 3xl:text-[13rem] tracking-normal leading-none">
-              <span>Building </span>
-              <br />
-              <span className="text-accent mt-6">Web Apps</span>
-              <span className="text-base md:text-xl lowercase">
-                {" "}
-                since 2019.
-              </span>
-            </h1>
-          </div>
-          <p className="max-w-md mt-12">
-            Experienced web developer with 3 years of proven expertise,
-            demonstrating a relentless commitment to accessibility, performance
-            optimization, and elevating user experience with UI/UX skills.
-          </p>
+        <div className="flex items-end">
+          <h1 className="h1">
+            <span className="">Building </span>
+            <br />
+            <span className="text-accent">Web apps</span>
+            <span className="ml-2 mb-3 text-base md:text-lg heading normal-case whitespace-nowrap">
+              Since 2019
+            </span>
+          </h1>
         </div>
+
+        <p className="body max-w-[420px] mt-10 leading-[21.6px]">
+          Experienced <mark>web developer</mark> with 3 years of proven
+          expertise, demonstrating a relentless commitment to accessibility,
+          performance optimization, and elevating user experience with{" "}
+          <mark>UI/UX</mark> skills.
+        </p>
       </section>
     </main>
   );
-}
+};
+export default Test;
