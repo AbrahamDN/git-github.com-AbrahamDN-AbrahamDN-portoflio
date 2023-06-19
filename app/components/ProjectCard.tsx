@@ -31,6 +31,8 @@ function ProjectCard({
       <Link
         href={preview}
         className="w-[100%] lg:w-[30%] aspect-[16/9] relative"
+        target="_blank"
+        rel="noreferrer"
       >
         <Image
           src={image}
@@ -44,7 +46,7 @@ function ProjectCard({
       <div className="flex flex-col justify-around py-2">
         <div className="mb-4">
           <h3 className="h3 mb-4">
-            <Link href={preview} tabIndex={1}>
+            <Link href={preview} tabIndex={1} target="_blank" rel="noreferrer">
               {title}
             </Link>
           </h3>
@@ -55,11 +57,21 @@ function ProjectCard({
         </div>
 
         <div className="flex">
-          <Link href={preview} className="uppercase font-medium">
+          <Link
+            href={preview}
+            className="uppercase font-medium"
+            target="_blank"
+            rel="noreferrer"
+          >
             View site
           </Link>
           <span className="mx-2">|</span>
-          <Link href={code} className="uppercase font-medium">
+          <Link
+            href={code}
+            className="uppercase font-medium"
+            target="_blank"
+            rel="noreferrer"
+          >
             View site
           </Link>
         </div>

@@ -47,22 +47,22 @@ const Test = () => {
               "STRIPE",
               "TAILWINDCSS",
             ]}
-            preview="/"
-            code="/"
+            preview="https://flair.abrahamdn.com/"
+            code="https://github.com/AbrahamDN/flair-ecom"
           />
           <ProjectCard
             title="Travel"
             image="https://res.cloudinary.com/abrahamdn/image/upload/v1686716729/abrahamdn/travel-desktop.png"
             skills={["JavaScript", "CSS", "HTML5"]}
-            preview="/"
-            code="/"
+            preview="https://travel.abrahamdn.com/"
+            code="https://github.com/AbrahamDN/travel"
           />
           <ProjectCard
             title="PokeDets"
             image="https://res.cloudinary.com/abrahamdn/image/upload/v1686718907/abrahamdn/pokedets-desktop.png"
             skills={["React", "Typescript", "Framer Motion", "Poke API"]}
-            preview="/"
-            code="/"
+            preview="https://pokedets.abrahamdn.com/"
+            code="https://github.com/AbrahamDN/pokedets"
           />
         </div>
       </section>
@@ -71,7 +71,7 @@ const Test = () => {
         <h2 className="h5">Contact me</h2>
 
         <div className="pt-28 grid">
-          <h3 className="h2 text-center text-accent mb-28">
+          <h3 className="h2 text-center text-accent mb-16 md:mb-28">
             LET’S WORK <br />
             TOGETHER
           </h3>
@@ -79,7 +79,7 @@ const Test = () => {
           <div className="mx-auto grid sm:grid-cols-2 gap-6 text-center">
             <div className="">
               <label className="h4">Email</label>
-              <p className="opacity-80 mt-4">mail@abrahamdn.com</p>
+              <p className="opacity-80 mt-2 md:mt-4">mail@abrahamdn.com</p>
             </div>
 
             <div className="">
@@ -87,7 +87,7 @@ const Test = () => {
                 <label className="h4" htmlFor="email">
                   Phone
                 </label>
-                <div className="opacity-80 mt-4">
+                <div className="opacity-80 mt-2 md:mt-4">
                   <input
                     type="email"
                     name="email"

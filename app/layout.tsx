@@ -23,6 +23,9 @@ export const metadata = {
   title: "Abraham DN Portfolio",
   description:
     "Experienced web developer with 3 years of proven expertise, demonstrating a relentless commitment to accessibility, performance optimization, and elevating user experience with UI/UX skills.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -81,7 +84,7 @@ export default function RootLayout({
 
         <footer className="text-xs lg:text-sm border border-line py-10 mt-5">
           <div className="container-lg text-center">
-            <p className="mb-4">I wish I had more images on here.</p>
+            <p className="mb-4">The site is still under construction...</p>
             <p>
               See you soon -{" "}
               <Link
