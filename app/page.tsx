@@ -66,6 +66,44 @@ const Test = () => {
           />
         </div>
       </section>
+
+      <section id="contact" className="section container-sm">
+        <h2 className="h5">Contact me</h2>
+
+        <div className="pt-28 grid">
+          <h3 className="h2 text-center text-accent mb-28">
+            LET’S WORK <br />
+            TOGETHER
+          </h3>
+
+          <div className="mx-auto grid sm:grid-cols-2 gap-6 text-center">
+            <div className="">
+              <label className="h4">Email</label>
+              <p className="opacity-80 mt-4">mail@abrahamdn.com</p>
+            </div>
+
+            <div className="">
+              <form action="">
+                <label className="h4" htmlFor="email">
+                  Phone
+                </label>
+                <div className="opacity-80 mt-4">
+                  <input
+                    type="email"
+                    name="email"
+                    id="lead-email"
+                    placeholder="Your email"
+                    className="bg-transparent border border-primary text-primary rounded-full py-2 px-4 placeholder-primary"
+                  />
+                  <p className="text-xs md:text-sm">
+                    Receive my number in seconds
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
