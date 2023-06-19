@@ -12,7 +12,7 @@ export const skills = {
 };
 
 export const navLinks = [
-  { title: "About", link: "#about" },
+  { title: "Tech Stack", link: "#tech-stack" },
   { title: "Projects", link: "#projects" },
   { title: "Contact", link: "#contact" },
 ];

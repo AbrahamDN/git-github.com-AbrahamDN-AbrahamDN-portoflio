@@ -84,6 +84,10 @@ body {
   .text-highlight {
     @apply text-accent font-medium;
   }
+
+  .opacity-change {
+    @apply opacity-50 hover:opacity-100 active:opacity-100;
+  }
 }
 
 @layer components {
@@ -98,7 +102,7 @@ body {
   }
 
   .section {
-    @apply w-full min-h-[600px] h-screen flex flex-col justify-center mx-auto py-32;
+    @apply w-full min-h-screen flex flex-col justify-center mx-auto py-32;
   }
 
   .after-text::after {
@@ -112,5 +116,31 @@ body {
     content: attr(data-text);
     @apply absolute top-[3px] left-0 text-primary hidden w-0;
     transition: width 400ms;
+  }
+
+  .stack {
+    @apply cursor-pointer;
+  }
+
+  .stack:hover,
+  .stack:focus,
+  .stack-visible {
+    @apply text-secondary;
+  }
+
+  .stack:hover .stack-bg,
+  .stack:focus .stack-bg,
+  .stack-visible .stack-bg {
+    @apply h-full;
+  }
+
+  .stack:hover .stack-skills,
+  .stack:focus .stack-skills,
+  .stack-visible .stack-skills {
+    @apply scale-x-100;
+  }
+
+  .stack-bg {
+    @apply transition-all duration-500;
   }
 }

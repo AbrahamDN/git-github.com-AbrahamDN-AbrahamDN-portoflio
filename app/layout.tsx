@@ -54,7 +54,7 @@ export default function RootLayout({
                     <Link
                       href={link}
                       data-text={title}
-                      className="opacity-50 hover:opacity-100 transition-opacity duration-500 text-fill"
+                      className="opacity-change transition-opacity duration-500 text-fill"
                     >
                       {title}
                     </Link>
@@ -67,7 +67,7 @@ export default function RootLayout({
 
         {children}
 
-        <aside className="sm:sticky container-lg sm:container-lg-left bottom-10">
+        <aside className="sm:sticky max-sm:container-lg sm:min-w-min sm:container-lg-left bottom-10">
           <ul className="flex gap-3 sm:flex-col md:gap-6 sm:w-[25px] items-center justify-center">
             {externalLinks.map(({ title, link }, idx) => (
               <li key={`exLink-${idx}`} className="mb-3">

@@ -1,6 +1,8 @@
+import TechStackSection from "./components/TechStackSection";
+
 const Test = () => {
   return (
-    <main className="w-full min-h-[600px] h-screen">
+    <main className="w-full min-h-screen">
       <section className="container-sm section relative after:content-['SCROLL_DOWN'] after-text">
         <cite className="h5 not-italic">
           Abraham D<span className="sr-only">ieudonne</span> Ndinga -
@@ -24,6 +26,8 @@ const Test = () => {
           <mark>UI/UX</mark> skills.
         </p>
       </section>
+
+      <TechStackSection />
     </main>
   );
 };
