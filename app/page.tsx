@@ -1,8 +1,6 @@
-import Image from "next/image";
 import TechStackSection from "./components/TechStackSection";
-import { skills } from "./data";
-import Link from "next/link";
 import ProjectCard from "./components/ProjectCard";
+import Email from "./components/Email";
 
 const Test = () => {
   return (
@@ -86,7 +84,7 @@ const Test = () => {
           <div className="mx-auto grid sm:grid-cols-2 gap-6 text-center">
             <div className="">
               <label className="h4">Email</label>
-              <p className="opacity-80 mt-2 md:mt-4">mail@abrahamdn.com</p>
+              <Email />
             </div>
 
             <div className="">
