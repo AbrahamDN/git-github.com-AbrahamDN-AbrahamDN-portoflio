@@ -29,6 +29,13 @@ const Test = () => {
           performance optimization, and elevating user experience with{" "}
           <mark>UI/UX</mark> skills.
         </p>
+
+        <video
+          src="https://res.cloudinary.com/abrahamdn/video/upload/v1687372979/abrahamdn/code_matrix_fcb4sc.mp4"
+          className="absolute top-0 left-0 -z-20 w-full h-screen object-cover"
+          autoPlay
+          muted
+        />
       </section>
 
       <TechStackSection />
