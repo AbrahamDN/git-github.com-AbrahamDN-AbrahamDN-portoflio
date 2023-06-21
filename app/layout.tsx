@@ -2,8 +2,9 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Link from "next/link";
-import { externalLinks, navLinks } from "./data";
+import { externalLinks } from "./data";
 import Icon from "./components/Icons";
+import NavMenu from "./components/NavMenu";
 
 const satoshi = localFont({
   src: "./fonts/Satoshi.ttf",
@@ -47,24 +48,7 @@ export default function RootLayout({
               ADN
             </Link>
 
-            <nav>
-              <ul className="text-end">
-                {navLinks.map(({ title, link }, idx) => (
-                  <li
-                    key={`navLink-${idx}`}
-                    className="heading uppercase text-xs md:text-sm mb-1 md:mb-2 last:mb-0"
-                  >
-                    <Link
-                      href={link}
-                      data-text={title}
-                      className="opacity-change transition-opacity duration-500 text-fill"
-                    >
-                      {title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <NavMenu />
           </div>
         </header>
 
