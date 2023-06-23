@@ -4,7 +4,7 @@ import Email from "./components/Email";
 
 const Test = () => {
   return (
-    <main className="w-full min-h-screen">
+    <main className="w-full min-h-screen relative">
       <section className="container-sm section relative after:content-['SCROLL_DOWN'] after-text">
         <cite className="h5 not-italic">
           Abraham D<span className="sr-only">ieudonne</span> Ndinga -
@@ -33,7 +33,10 @@ const Test = () => {
           className="absolute top-0 left-0 -z-20 w-full h-screen object-cover"
           autoPlay
           muted
+          loop
         />
+
+        <div className="h-32 w-full absolute left-0 -bottom-16 bg-gradient-to-b from-transparent via-secondary to-transparent"></div>
       </section>
 
       <TechStackSection />
@@ -92,15 +95,16 @@ const Test = () => {
                 <label className="h4" htmlFor="email">
                   Phone
                 </label>
-                <div className="opacity-80 mt-2 md:mt-4">
+                <div className="mt-2 md:mt-4">
                   <input
                     type="email"
                     name="email"
                     id="lead-email"
                     placeholder="Your email"
-                    className="bg-transparent border border-primary text-primary rounded-full py-2 px-4 placeholder-primary"
+                    className="bg-transparent border border-primary text-primary rounded-full py-2 px-4 placeholder-primary opacity-80 focus-within:opacity-100 -outline-offset-1"
+                    required
                   />
-                  <p className="text-xs md:text-sm">
+                  <p className="text-xs md:text-sm opacity-80">
                     Receive my number in seconds
                   </p>
                 </div>

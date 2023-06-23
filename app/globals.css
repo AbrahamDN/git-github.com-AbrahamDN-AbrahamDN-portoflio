@@ -35,6 +35,10 @@ body {
 }
 
 @layer base {
+  * {
+    @apply focus-visible:outline-accent focus-visible:outline-none focus-visible:outline-1;
+  }
+
   body {
     @apply text-sm sm:text-base;
   }

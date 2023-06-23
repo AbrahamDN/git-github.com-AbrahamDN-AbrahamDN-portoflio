@@ -25,7 +25,7 @@ const TechStackSection = () => {
           <div
             key={`stack-${idx}`}
             tabIndex={0}
-            className={`relative container-sm border-b border-line last:border-none stack ${
+            className={`relative container-sm border-b border-line last:border-none outline-none stack ${
               viewAll ? "stack-visible" : ""
             }`}
           >
