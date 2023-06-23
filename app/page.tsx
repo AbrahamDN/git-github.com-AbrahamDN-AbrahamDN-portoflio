@@ -6,8 +6,8 @@ const Test = () => {
   return (
     <main className="w-full min-h-screen relative">
       <section className="container-sm section relative after:content-['SCROLL_DOWN'] after-text">
-        <cite className="h5 not-italic">
-          Abraham D<span className="sr-only">ieudonne</span> Ndinga -
+        <cite className="h5 not-italic z-20">
+          Abraham <abbr title="Dieudonne">D</abbr> Ndinga -
         </cite>
 
         <div className="flex items-end">
