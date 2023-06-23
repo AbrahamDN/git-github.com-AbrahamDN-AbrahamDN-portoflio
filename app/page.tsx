@@ -4,7 +4,7 @@ import Email from "./components/Email";
 
 const Test = () => {
   return (
-    <main className="w-full min-h-screen relative">
+    <main className="w-full min-h-screen relative snap-mandatory snap-y ">
       <section className="container-sm section relative after:content-['SCROLL_DOWN'] after-text">
         <cite className="h5 not-italic z-20">
           Abraham <abbr title="Dieudonne">D</abbr> Ndinga -

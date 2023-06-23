@@ -96,6 +96,19 @@ body {
   .active-link {
     @apply opacity-100;
   }
+
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
 }
 
 @layer components {
@@ -110,7 +123,7 @@ body {
   }
 
   .section {
-    @apply w-full min-h-screen flex flex-col justify-center mx-auto py-32;
+    @apply w-full h-screen flex flex-col justify-center mx-auto py-32 snap-center;
   }
 
   .after-text::after {

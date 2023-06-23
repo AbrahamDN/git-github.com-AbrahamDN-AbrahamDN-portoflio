@@ -1,6 +1,6 @@
-const sections = document.querySelectorAll("section[id]");
-
 export const scrollActive = () => {
+  const sections = document.querySelectorAll("section[id]");
+
   if (typeof window === "undefined") return;
 
   const scrollY = window.pageYOffset;
