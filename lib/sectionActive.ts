@@ -1,6 +1,8 @@
 const sections = document.querySelectorAll("section[id]");
 
 export const scrollActive = () => {
+  if (typeof window === "undefined") return;
+
   const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
@@ -10,6 +12,8 @@ export const scrollActive = () => {
       sectionsClass = document.querySelector(
         ".nav__menu a[href*=" + sectionId + "]"
       );
+
+    console.info();
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       sectionsClass?.classList.add("active-link");

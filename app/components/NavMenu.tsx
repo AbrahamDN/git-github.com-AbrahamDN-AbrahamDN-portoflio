@@ -7,8 +7,7 @@ import { useEventListener } from "usehooks-ts";
 import { scrollActive } from "@/lib/sectionActive";
 
 function NavMenu() {
-  const documentRef = useRef<Document>(document);
-  useEventListener("scroll", scrollActive, documentRef);
+  useEventListener("scroll", scrollActive);
 
   return (
     <nav className="nav__menu">
